@@ -1,0 +1,122 @@
+.sc_1,
+.sc_4 {
+    width: 33.33%;
+    height: 50%;
+    float: left;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sc_2,
+.sc_3 {
+    width: 66.66%;
+    height: 50%;
+    float: left;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.sc_4 .title {
+    padding-top: 4%;
+}
+.video {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+.pdc_progress_box {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    background: linear-gradient(to bottom, rgb(61, 133, 198), rgb(4, 4, 133));
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sc_2 .chart_box {
+    width: 25%;
+    height: 100%;
+    float: left;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+.progress {
+    width: 90%;
+    height: 5%;
+    margin: 0 auto;
+    background: #bcbebe;
+    position: relative;
+}
+
+.pro_box {
+    width: 100%;
+    height: 100%;
+    background: #013c53;
+}
+
+.per_com  {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pro_box_QG {
+    width: 100%;
+}
+.pro_box_CK {
+    width: 100%;
+}
+.pro_box_HJ {
+    width: 100%;
+}
+.pro_box_FL {
+    width: 100%;
+}
+
+.sc_2 .chart {
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    width: 100%;
+    height: 85%;
+}
+
+.sc_3 .Day_pdc_box {
+    width: 95%;
+    height: 75%;
+    margin: 0 auto;
+    /* border: 1px solid yellowgreen; */
+    border-radius: 10px;
+}
+
+.sc_4 {
+    position: relative;
+}
+
+.error_box {
+    width: 95%;
+    height: 75%;
+    margin: 0 auto;
+    /* border: 1px solid yellowgreen; */
+    border-radius: 10px;
+}
+
+.sc_4 .text {
+    position: absolute;
+    left: 30px;
+    top: 18%;
+    z-index: 666;
+    color: white;
+}

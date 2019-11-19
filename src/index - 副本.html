@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body, html,.wraper 
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    font-family:"微软雅黑";
+    /*background-color: #0000D4;*/
+    background: linear-gradient(to bottom, #3d85c6ff, #040485ff);
+}
+
+#allmap{
+    height: 100%;
+    /*border:2px solid #6495ED;*/
+    border-radius: 20px;
+    margin-left:2px;
+    margin-right: 2px;
+}
+
+.col-left{
+    width: 16.67%;
+    float: left;
+    height: 100%;
+}
+
+.col-right{
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+
+.col-middle{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#left-up{
+    margin-top: 2%;
+    height:48%;
+    color:#ffffff;
+    /*border:2px solid #6495ED;*/
+    border-radius: 20px;
+    margin-left:2px;
+    background: linear-gradient(to bottom, #3d85c6ff, #040485ff);
+}
+
+
+#left-up p{
+    font-size: 17px;
+    margin-left: 15%;
+}
+
+#left-up .title{
+    text-align: center;
+    color:#f4ea2a;   
+}
+
+/*rgb(156, 67, 38)*/
+
+#left-down{
+    color:#ffffff;
+    /*border:2px solid #6495ED;*/
+    border-radius: 20px;
+    margin-top: 6%;
+    height:40%;
+    margin-left:2px;
+    background: linear-gradient(to bottom, #3d85c6ff, #040485ff);
+    padding-top: 2%;
+}
+
+#left-down p{
+    font-size: 17px;
+    margin-left: 15%;
+    line-height: 95%;
+}
+
+#left-down .title{
+    text-align: center;
+    color: #f4ea2a;  
+}
+
+.anchorBL{
+    display:none;
+    }
+
+</style>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSd6k505Vbz63gFOMehniG84cxeqGs4d"></script>
+<script type="text/javascript" src="http://mapv.baidu.com/build/mapv.js"></script>
+
+<script src="lib/jquery.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/xrange.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+
+<script>
+
+    document.write("<s"+"cript type='text/javascript' src='js/projectMap.js?"+Math.random()+"'></scr"+"ipt>"); 
+    document.write("<s"+"cript type='text/javascript' src='js/CustomOverlay.js?"+Math.random()+"'></scr"+"ipt>"); 
+    document.write("<s"+"cript type='text/javascript' src='js/turnoverChat.js?"+Math.random()+"'></scr"+"ipt>"); 
+    document.write("<s"+"cript type='text/javascript' src='js/pieChat.js?"+Math.random()+"'></scr"+"ipt>"); 
+    document.write("<s"+"cript type='text/javascript' src='js/pieChat2.js?"+Math.random()+"'></scr"+"ipt>"); 
+    document.write("<s"+"cript type='text/javascript' src='js/gantChat.js?"+Math.random()+"'></scr"+"ipt>"); 
+
+</script>
+
+<title>项目分布图</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="col-right">
+            <div id="right-down" style="height:50%;padding-top:20px;">
+                <div id="gantChat" style="float:left;width:58%;margin-right:1%;height:94%;"></div>
+
+                <div style="float:left;width:40%;margin-right:1%;height:94%;">
+                    <div id="pieChat" style="width:100%;height:50%;"></div>
+                    <div id="pieChat2" style="width:100%;height:50%;"></div>
+                </div> 
+            </div>
+
+            <div id="right-up" style="height:50%;margin-top:-10px;">
+                <div id="turnoverChat" style="margin-right:1%;height:94%"></div>
+            </div>
+
+        </div>
+        <div class="col-middle">
+            <div id="allmap"></div>
+        </div>
+        <div class="col-left">
+            <div id="left-up">
+                <div class="title">
+                    <img src="images/trans.png" height="45" width="45" style="vertical-align:middle;">
+                    <span style="font-size:22px;vertical-align:middle;">模板周转数据</span>
+                </div>
+                <marquee>
+                <p>周转城市数：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:aqua">56</span>&nbsp;个</p>
+                <p>监测模板数：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:aqua">567681</span>&nbsp;块</p>
+                <p><span class="date1">2018-01&nbsp;周转板数：&nbsp;</span><span style="color:aqua">275456</span>&nbsp;块</p>
+                <p><span class="date1">2018-02&nbsp;周转板数：&nbsp;</span><span style="color:aqua">234578</span>&nbsp;块</p>
+                <p><span class="date1">2018-03&nbsp;周转板数：&nbsp;</span><span style="color:aqua">285985</span>&nbsp;块</p>
+                <p><span class="date1">2018-04&nbsp;周转板数：&nbsp;</span><span style="color:aqua">294531</span>&nbsp;块</p>
+                <p><span class="date1">2018-05&nbsp;计划板数：&nbsp;</span><span style="color:aqua">300000</span>&nbsp;块</p>
+                <p><span class="date1">2018-06&nbsp;计划板数：&nbsp;</span><span style="color:aqua">320000</span>&nbsp;块</p>
+                <p><span class="date1">2018-07&nbsp;计划板数：&nbsp;</span><span style="color:aqua">350000</span>&nbsp;块</p>
+                <p><span class="date1">2018-08&nbsp;计划板数：&nbsp;</span><span style="color:aqua">380000</span>&nbsp;块</p>
+                <p><span class="date1">2018-09&nbsp;计划板数：&nbsp;</span><span style="color:aqua">400000</span>&nbsp;块</p>
+                </marquee>
+            </div>
+            <div id="left-down">
+                <div class="title">
+                    <img src="images/project.png" height="45" width="45" style="vertical-align:middle;">
+                    <span style="font-size:22px;vertical-align:middle;">月度项目数据</span>
+                </div>
+                <marquee direction="up">
+                <p><span class="date2">2018-01</span>&nbsp;完成楼栋：&nbsp;<span style="color:aqua">29</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成面积：&nbsp;<span style="color:aqua">61485</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-02</span>&nbsp;完成楼栋：&nbsp;<span style="color:aqua">24</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成面积：&nbsp;<span style="color:aqua">42687</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-03</span>&nbsp;完成楼栋：&nbsp;<span style="color:aqua">32</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成面积：&nbsp;<span style="color:aqua">69584</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-04</span>&nbsp;完成楼栋：&nbsp;<span style="color:aqua">35</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成面积：&nbsp;<span style="color:aqua">71793</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-05</span>&nbsp;计划楼栋：&nbsp;<span style="color:aqua">40</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计划面积：&nbsp;<span style="color:aqua">86000</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-06</span>&nbsp;计划楼栋：&nbsp;<span style="color:aqua">45</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计划面积：&nbsp;<span style="color:aqua">90000</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-07</span>&nbsp;计划楼栋：&nbsp;<span style="color:aqua">50</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计划面积：&nbsp;<span style="color:aqua">100000</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-08</span>&nbsp;计划楼栋：&nbsp;<span style="color:aqua">55</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计划面积：&nbsp;<span style="color:aqua">110000</span>&nbsp;m<sup>2</sup></p>
+                <p><span class="date2">2018-09</span>&nbsp;计划楼栋：&nbsp;<span style="color:aqua">60</span>&nbsp;栋</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计划面积：&nbsp;<span style="color:aqua">120000</span>&nbsp;m<sup>2</sup></p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

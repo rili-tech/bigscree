@@ -1,0 +1,38 @@
+.video {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+.map_box {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+.sc_3 {
+    overflow: hidden;
+}
+
+.sc_3 .title {
+    padding-top: 4%;
+}
+
+.sc_3>div {
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.chart_box {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}

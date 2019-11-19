@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生产</title>
+    <link rel="stylesheet" href="./css/com.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="screen sc_1">
+            <p class="title">视频</p>
+            <div class="video">
+                <iframe width="100%" height="100%" style="border-radius: 10px;" src='http://player.youku.com/embed/XODAzOTY1ODgw' frameborder=0
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="screen sc_2">
+            <p class="title">生产进度图</p>
+            <div class="pdc_progress_box">
+                <div class="chart_box">
+                    <div class="progress">
+                        <div class="pro_box pro_box_QG">
+                            <span class="per_com percent_QG">100%</span>
+                        </div>
+                    </div>
+                    <div id="qieGeChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                    <div class="progress">
+                        <div class="pro_box pro_box_CK">
+                            <span class="per_com percent_CK">100%</span>
+                        </div>
+                    </div>
+                    <div id="chongKongChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                    <div class="progress">
+                        <div class="pro_box pro_box_HJ">
+                            <span class="per_com percent_HJ">100%</span>
+                        </div>
+                    </div>
+                    <div id="hanJieChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                    <div class="progress">
+                        <div class="pro_box pro_box_FL">
+                            <span class="per_com percent_FL">100%</span>
+                        </div>
+                    </div>
+                    <div id="fenLiaoChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen sc_3">
+            <p class="title">每日生产图</p>
+            <div class="Day_pdc_box">
+                <div id="dayChart" style="width: 100%;height: 100%;"></div>
+            </div>
+        </div>
+        <div class="screen sc_4">
+            <p class="title">生产错误率</p>
+            <div class="text">
+                <p>模板总数：
+                    <span class="sum">22000</span>
+                </p>
+                <p>标准板：
+                    <span class="successNum">15620</span>
+                </p>
+                <p>错误板：
+                    <span class="errorNum">6380</span>
+                </p>
+            </div>
+            <div class="error_box" id="errorChart"></div>
+            <span id="second_btn" class="button">返回</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/product.js"></script>

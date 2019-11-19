@@ -1,0 +1,146 @@
+.sc_2 {
+    overflow: hidden;
+    color: white;
+}
+
+.sc_2 .pjc {
+    box-sizing: border-box;
+    font-size: 16px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* background: burlywood; */
+}
+
+.pjc_state {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.state_box {
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgb(61, 133, 198), rgb(4, 4, 133));
+}
+
+.state_box>div {
+    width: 50%;
+    height: 50%;
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.state_box>div>p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.pjc_framInfo {
+    position: relative;
+}
+
+.pjc_framInfo .text {
+    position: absolute;
+    left: 30px;
+    top: 18%;
+    z-index: 666;
+    color: white;
+}
+
+.framInfo_box {
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.sc_3 .design {
+    height: 85%;
+    overflow: hidden;
+}
+
+.design>div {
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.sc_3_left>div {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sc_3_left>div>div {
+    height: 48%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sc_3_left .left_up {
+    background: linear-gradient(to bottom, rgb(106, 180, 245), rgba(0, 0, 0, 0.3));
+}
+
+.sc_3_left .left_down {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgb(106, 180, 245), rgba(0, 0, 0, 0.3));
+}
+
+.sc_3_right>div {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(106, 180, 245), rgba(0, 0, 0, 0.3));
+}
+
+.product {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(106, 180, 245), rgba(0, 0, 0, 0.3));
+}
+
+.sc_1 .product {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.sc_6 {
+    position: relative;
+}
+
+.href:hover {
+    color: white;
+    font-size: 28px;
+    transition: 0.5s linear;
+}
+
+.sc_2 .title {
+    padding-top: 4%;
+}

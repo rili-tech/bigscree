@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>供应</title>
+    <link rel="stylesheet" href="./css/com.css">
+    <link rel="stylesheet" href="./css/supply.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSd6k505Vbz63gFOMehniG84cxeqGs4d">
+    </script><script type="text/javascript" src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="screen sc_1">
+            <p class="title">铝模板全自动生产线</p>
+            <div class="video">
+                <video width="100%" height="100%" style="border-radius: 10px;" controls="controls" loop="loop" muted autoplay="autoplay">
+                    <source src="video/自动线焊接视频3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="screen sc_2">
+            <p class="title">迁移图</p>
+            <div class="map_box">
+                <div id="map" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+
+        </div>
+        <div class="screen sc_3">
+            <div class="left">
+                <p class="title">标准板与非标准板占比</p>
+                <div class="chart_box" id="isOkChart"></div>
+            </div>
+            <div class="right">
+                <p class="title">新旧板占比</p>
+                <div class="chart_box" id="isNewChart"></div>
+            </div>
+        </div>
+        <div class="screen sc_4">
+            <p class="title">每日模板供应量</p>
+            <div class="product">
+                <div id="daySupplyChart" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+        </div>
+        <div class="screen sc_5">
+            <p class="title">累计模板供应量</p>
+            <div class="product">
+                <div id="sumSupplyChart" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+
+        </div>
+        <div class="screen sc_6">
+            <p class="title">模板发货回收详情图</p>
+            <div class="product">
+                <div id="infoChart" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+
+            <span id="second_btn" class="button">返回</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/supply.js"></script>

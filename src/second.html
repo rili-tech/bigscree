@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/com.css">
+    <link rel="stylesheet" href="./css/second_page.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSd6k505Vbz63gFOMehniG84cxeqGs4d"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/xrange.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="screen sc_1">
+            <a href="#" class="title">
+                <img src="" alt=""> 三维
+            </a>
+            <div class="product">
+                <!-- <div id="allmap" style="width : 100%;height: 100%;border-radius: 10px"></div> -->
+                <iframe src="3dViewer/index.html" frameborder="0" style="width :100%;height:100%;border-radius: 10px;"></iframe>
+            </div>
+        </div>
+        <div class="screen sc_2">
+            <div class="pjc pjc_state">
+                <a href="#" class="title">
+                    <img src="" alt=""> 项目状态
+                </a>
+                <div class="state_box">
+                    <div class="state_1">
+                        <p>设计业务</p>
+                        <div class="circle">
+                            <span class="design_span">100%</span>
+                        </div>
+                        <p>设计完成率</p>
+                    </div>
+                    <div class="state_2">
+                        <p>生产业务</p>
+                        <div class="circle">
+                            <span class="product_span">100%</span>
+                        </div>
+                        <p>供应完成率</p>
+                    </div>
+                    <div class="state_3">
+                        <p>拼装业务</p>
+                        <div class="circle">
+                            <span class="pinZhuang_span">100%</span>
+                        </div>
+                        <p>拼装完成率</p>
+                    </div>
+                    <div class="state_4">
+                        <p>物流业务</p>
+                        <div class="circle">
+                            <span class="wuLiu_span">100%</span>
+                        </div>
+                        <p>运输完成率</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pjc pjc_framInfo">
+                <a href="#" class="title">
+                    <img src="" alt=""> 项目模板信息
+                </a>
+                <div class="text">
+                    <p>模板总数：<span class="sum">12000</span></p>
+                    <p>新板数：<span class="successNum">2950</span></p>   
+                </div>
+                <div class="framInfo_box">
+                    <div id="framInfoChart" style="width :100%;height:100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen sc_3">
+            <a href="#" class="title">
+                <img src="" alt=""> 设计
+            </a>
+            <div class="design">
+                <div class="sc_3_left">
+                    <div>
+                        <div class="left_up">
+                            
+                            <div id="DTChart" style="width :100%;height:100%;"></div>
+                        </div>
+                        <div class="left_down">
+                            
+                            <div id="GCChart" style="width :100%;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc_3_right">
+                    <div>
+                        
+                        <div id="design_chart" style="width :100%;height:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen sc_4">
+            <a href="product.html" class="title href">
+                <img src="" alt=""> 生产
+            </a>
+            <div class="product">
+                <div id="chart4" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+        </div>
+        <div class="screen sc_5">
+            <a href="supply.html" class="title href">
+                <img src="" alt=""> 供应
+            </a>
+            <div class="product">
+                <div id="chart5" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+        </div>
+        <div class="screen sc_6">
+            <a href="logistics.html" class="title href">
+                <img src="" alt=""> 物流
+            </a>
+            <div class="product">
+                <div id="allmap" style="width : 100%;height: 100%;border-radius: 10px"></div>
+            </div>
+            <span id="second_btn" class="button">返回</span>
+        </div>
+    </div>
+</body>
+
+<script src="./js/second_page.js"></script>
+</html>
+<script>
+</script>

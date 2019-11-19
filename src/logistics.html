@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物流</title>
+    <link rel="stylesheet" href="./css/com.css">
+    <link rel="stylesheet" href="./css/logistics.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="screen sc_1">
+            <p class="title">物流动态</p>
+            <div class="logistics_box" id="wuLiu">
+                <script id="wuLiuTpl" type="text/html">
+                    <div class="address">
+                        <div class="start_end">
+                            <div>{{start}}</div>
+                            <div class="arrow_box">
+                                <div class="gray"></div>
+                                <div class="arrow"></div>
+                            </div>
+                            <div>{{end}}</div>
+                        </div>
+                        <div class="new_state">{{newTime}} {{newAddress}}</div>
+                    </div>
+                    <div class="marquee_box">
+                        <marquee behavior="" direction="up" scrollamount="2">
+                            <ul>
+                                {{each marqueeData as item index}}
+                                <li>{{item.time}} {{item.address}}</li>
+                                {{/each}}
+                            </ul>
+                        </marquee>
+                    </div>
+                </script>
+            </div>
+        </div>
+        <div class="screen sc_2">
+            <p class="title">货车信息</p>
+            <div class="logistics_box">
+                <div class="l_r_box" id="cartInfo">
+                    <script id="carTpl" type="text/html">
+                        <div class="left">
+                            <p class="title">起点</p>
+                            <div class="car_img">
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car_info">
+                                <p>运输单位名称：{{carData.start.name}}</p>
+                                <p>货车类型：{{carData.start.type}}</p>
+                                <p>车牌号： {{carData.start.carNum}}</p>
+                                <p>司机： {{carData.start.driverName}}</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p class="title">终点</p>
+                            <div class="car_img">
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <div>
+                                        <img src="images/car1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car_info">
+                                <p>运输单位名称：{{carData.end.name}}</p>
+                                <p>货车类型：{{carData.end.type}}</p>
+                                <p>车牌号： {{carData.end.carNum}}</p>
+                                <p>司机： {{carData.end.driverName}}</p>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="screen sc_3">
+            <p class="title">司机信息</p>
+            <div class="logistics_box">
+                <div class="l_r_box" id="driverInfo">
+                    <script id="driverTpl" type="text/html">
+                        <div class="left">
+                            <div class="driver_img">
+                                <div>
+                                    <img src="images/driver.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="driver_info">
+                                <ul>
+                                    <li>司机1：</li>
+                                    <li>身份证：{{driverData.one.num}}
+                                        <li>
+                                            <li>驾驶证：{{driverData.one.carNum}}</li>
+                                            <li>联系电话：{{driverData.one.tpl}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="driver_img">
+                                <div>
+                                    <img src="images/driver2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="driver_info">
+                                <ul>
+                                    <li>司机2：</li>
+                                    <li>身份证：{{driverData.two.num}}
+                                        <li>
+                                            <li>驾驶证：{{driverData.two.carNum}}</li>
+                                            <li>联系电话：{{driverData.two.tpl}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="screen sc_4">
+
+        </div>
+        <div class="screen sc_5">
+
+        </div>
+        <div class="screen sc_6">
+            <span id="second_btn" class="button">返回</span>
+        </div>
+    </div>
+</body>
+<script src="./lib/template-web.js"></script>
+<script src="./lib/jquery.min.js"></script>
+
+</html>
+
+<script src="./js/logistics.js"></script>
+<script>
+    // $.ajax({
+    //     url: 'artTem.php',
+    //     type: 'get',
+    //     success: function (data) {
+    //         console.log(data);
+    //         // 转化为js对象 数组
+    //         var jsArr = JSON.parse(data);
+    //         // 包装为js对象
+    //         var obj = {
+    //             items: jsArr
+    //         };
+    //         // 调用模板引擎的方法，填充数据
+    //         var result = template('template', obj);
+
+    //         $('.container').append(result);
+    //     }
+    // });
+</script>

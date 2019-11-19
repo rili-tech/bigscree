@@ -1,0 +1,162 @@
+﻿[{
+  "provinces":"北京",
+  "lng": 116.395645038,
+  "lat": 39.9299857781,
+  "centercity" :"密云区",
+  "projects": "3"
+},
+{
+  "provinces":"天津",
+  "lng": 117.210813092,
+  "lat": 39.1439299033,
+  "centercity" :"滨海新区",
+  "projects": 22
+},
+{
+  "provinces":"上海",
+   "lng": 121.487899486,
+  "lat": 31.24916171,
+  "centercity" :"松江区",
+  "projects": 14
+},
+{
+  "provinces":"重庆",
+  "lng": 106.530635013,
+  "lat": 29.5446061089,
+  "centercity" :"武隆区",
+  "projects": 19
+},
+{
+  "provinces":"河北",
+  "lng": 114.522081844,
+  "lat": 38.0489583146,
+  "centercity" :"邢台",
+  "projects": 13
+},
+{
+  "provinces":"山西",
+  "lng": 118.725269,
+  "lat": 36.542764,
+  "centercity" :"太原",
+  "projects": 9
+},
+{
+  "provinces":"江苏",
+  "lng": 118.778074408,
+  "lat": 32.0572355018,
+  "centercity" :"宿迁",
+  "projects": 14
+},
+{
+  "provinces":"浙江",
+  "lng": 120.219375416,
+  "lat": 30.2592444615,
+  "centercity" :"金华",
+  "projects": 32
+},
+{
+  "provinces":"安徽",
+  "lng": 117.282699092,
+  "lat": 31.8669422607,
+  "centercity" :"安庆",
+  "projects": 12
+},
+{
+  "provinces":"福建",
+  "lng": 119.330221107,
+  "lat": 26.0471254966,
+  "centercity" :"三明",
+  "projects": 21
+},
+{
+  "provinces":"江西",
+  "lng": 115.893527546,
+  "lat": 28.6895780001,
+  "centercity" :"南昌",
+  "projects": 16
+},
+{
+  "provinces":"山东",
+  "lng": 117.024967066,
+  "lat": 36.6827847272,
+  "centercity" :"济宁",
+  "projects": 18
+},
+{
+  "provinces":"河南",
+  "lng": 113.64964385,
+  "lat": 34.7566100641,
+  "centercity" :"许昌",
+  "projects": 7
+},
+{
+  "provinces":"湖北",
+  "lng": 114.316200103,
+  "lat": 30.5810841269,
+  "centercity" :"荆门",
+  "projects": 14
+},
+{
+  "provinces":"湖南",
+  "lng": 112.979352788,
+  "lat": 28.2134782309,
+  "centercity" :"永州",
+  "projects": 17
+},
+{
+  "provinces":"广东",
+  "lng": 113.307649675,
+  "lat": 23.1200491021,
+  "centercity" :"河源",
+  "projects": 43
+},
+{
+  "provinces":"海南",
+  "lng": 110.330801848,
+  "lat": 20.022071277,
+  "centercity" :"三亚",
+  "projects": 7
+},
+{
+  "provinces":"四川",
+  "lng": 104.067923463,
+  "lat": 30.6799428454,
+  "centercity" :"甘孜藏族自治州",
+  "projects": 17
+},
+{
+  "provinces":"贵州",
+  "lng": 106.709177096,
+  "lat": 26.6299067414,
+  "centercity" :" 黔东南苗族侗族自治州",
+  "projects": 15
+},
+{
+  "provinces":"云南",
+  "lng": 102.714601139,
+  "lat": 25.0491531005,
+  "centercity" :"玉溪",
+  "projects": 34
+},
+{
+  "provinces":"陕西",
+  "lng": 108.953098279,
+  "lat": 34.2777998978,
+  "centercity" :"西安",
+  "projects": 6
+},
+{
+  "provinces":"广西",
+  "lng": 108.297233556,
+  "lat": 22.8064929356,
+  "centercity" :"钦州",
+  "projects": 53
+},
+{
+  "provinces":"马来西亚",
+  "lng": 101.891802,
+  "lat": 3.065234,
+  "centercity" :"立卑",
+  "projects": 8
+}
+]
