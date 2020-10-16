@@ -1,25 +1,25 @@
 
 var cityCount = 56;
 var formworkCount = 567681;
-var formworkdatas = [{"datatime":"2018-08", "name1":"周转板数：","count":315456},
-                     {"datatime":"2018-09", "name1":"周转板数：","count":334578},
-                     {"datatime":"2018-10", "name1":"周转板数：","count":355985},
-                     {"datatime":"2018-11", "name1":"周转板数：","count":384531},
-                     {"datatime":"2018-12", "name1":"周转板数：","count":300000},
-                     {"datatime":"2019-01", "name1":"周转板数：","count":67500},
-                     {"datatime":"2019-02", "name1":"计划板数：","count":160000},
-                     {"datatime":"2019-03", "name1":"计划板数：","count":410000},
-                     {"datatime":"2019-04", "name1":"计划板数：","count":490000}];
+var formworkdatas = [{"datatime":"2019-10", "name1":"周转板数：","count":315456},
+                     {"datatime":"2019-11", "name1":"周转板数：","count":334578},
+                     {"datatime":"2019-12", "name1":"周转板数：","count":355985},
+                     {"datatime":"2020-05", "name1":"周转板数：","count":384531},
+                     {"datatime":"2020-06", "name1":"周转板数：","count":300000},
+                     {"datatime":"2020-07", "name1":"周转板数：","count":67500},
+                     {"datatime":"2020-08", "name1":"计划板数：","count":160000},
+                     {"datatime":"2020-09", "name1":"计划板数：","count":410000},
+                     {"datatime":"2020-10", "name1":"计划板数：","count":490000}];
 
- var projectdatas = [{"datatime":"2018-08", "name1":"完成楼栋：","count":39, "name2":"完成面积：","count2":79485},
-                     {"datatime":"2018-09", "name1":"完成楼栋：","count":42, "name2":"完成面积：","count2":82687},
-                     {"datatime":"2018-10", "name1":"完成楼栋：","count":35, "name2":"完成面积：","count2":69584},
-                     {"datatime":"2018-11", "name1":"完成楼栋：","count":45, "name2":"完成面积：","count2":91793},
-                     {"datatime":"2018-12", "name1":"完成楼栋：","count":48, "name2":"完成面积：","count2":96000},
-                     {"datatime":"2019-01", "name1":"完成楼栋：","count":35, "name2":"完成面积：","count2":70000},
-                     {"datatime":"2019-02", "name1":"计划楼栋：","count":20, "name2":"计划面积：","count2":40000},
-                     {"datatime":"2019-03", "name1":"计划楼栋：","count":50, "name2":"计划面积：","count2":110000},
-                     {"datatime":"2019-04", "name1":"计划楼栋：","count":60, "name2":"计划面积：","count2":120000}];              
+ var projectdatas = [{"datatime":"2019-10", "name1":"完成楼栋：","count":39, "name2":"完成面积：","count2":79485},
+                     {"datatime":"2019-11", "name1":"完成楼栋：","count":42, "name2":"完成面积：","count2":82687},
+                     {"datatime":"2019-12", "name1":"完成楼栋：","count":35, "name2":"完成面积：","count2":69584},
+                     {"datatime":"2020-05", "name1":"完成楼栋：","count":45, "name2":"完成面积：","count2":91793},
+                     {"datatime":"2020-06", "name1":"完成楼栋：","count":48, "name2":"完成面积：","count2":96000},
+                     {"datatime":"2020-07", "name1":"完成楼栋：","count":35, "name2":"完成面积：","count2":70000},
+                     {"datatime":"2020-08", "name1":"计划楼栋：","count":20, "name2":"计划面积：","count2":40000},
+                     {"datatime":"2020-09", "name1":"计划楼栋：","count":50, "name2":"计划面积：","count2":110000},
+                     {"datatime":"2020-10", "name1":"计划楼栋：","count":60, "name2":"计划面积：","count2":120000}];              
 
 $(function () {
     //$('#left-up').append('<marquee>'); 
