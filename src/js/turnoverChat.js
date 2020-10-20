@@ -32,7 +32,7 @@ $(function () {
 
     var intTime = 250;
     var time = 0;
-    var timeTotal = intTime*4*24;
+    var timeTotal = intTime*4*16;
     var intval = intTime*2;
 
     window.setInterval(updatehighcharts, intTime); 
