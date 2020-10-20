@@ -4,11 +4,11 @@ $(function () {
     var myDate = new Date();
     var y = myDate.getFullYear();//2018
     var m = myDate.getMonth();//3
-    y -= 1;
+    y -= 2;
     m += 1;
     
     var categories = [];
-    for(var i = 0; i < 24; i++)
+    for(var i = 0; i < 16; i++)
     {
         var l = y.toString() + '-' + m.toString();
         m++;
@@ -23,14 +23,12 @@ $(function () {
     var zhoudata= [{color: "#7cb5ec",y: 45.6},{color: "#7cb5ec",y: 48.4},{color: "#7cb5ec",y: 49.7},{color: "#7cb5ec",y: 50.5},{color: "#7cb5ec",y: 53.5}
     ,{color: "#7cb5ec",y: 55},{color: "#7cb5ec",y: 56.6},{color: "#7cb5ec",y: 58.0},{color: "#7cb5ec",y: 57.9},{color: "#7cb5ec",y: 58.1}
     ,{color: "#7cb5ec",y: 60.6},{color: "#7cb5ec",y: 61.4},{color: "#7cb5ec",y: 60.7},{color: "#7cb5ec",y: 70.9},{color: "#7cb5ec",y: 78.5}
-    ,{color: "#7cb5ec",y: 72.1},{color: "#7cb5ec",y: 80.6},{color: "#7cb5ec",y: 80.3},{color: "#7cb5ec",y: 80.6},{color: "#7cb5ec",y: 82.5}
-    ,{color: "#7cb5ec",y: 84.4},{color: "#7cb5ec",y: 85.1},{color: "#7cb5ec",y: 85.6},{color: "#7cb5ec",y: 88.4}];
+    ,{color: "#7cb5ec",y: 72.1}];
 
     var errordata= [{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.45},{color: "#FFA500",y: 0.43},{color: "#FFA500",y: 0.41}
     ,{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.38},{color: "#FFA500",y: 0.33},{color: "#FFA500",y: 0.36}
     ,{color: "#FFA500",y: 0.34},{color: "#FFA500",y: 0.33},{color: "#FFA500",y: 0.32},{color: "#FFA500",y: 0.30},{color: "#FFA500",y: 0.25}
-    ,{color: "#FFA500",y: 0.28},{color: "#FFA500",y: 0.25},{color: "#FFA500",y: 0.22},{color: "#FFA500",y: 0.20},{color: "#FFA500",y: 0.20}
-    ,{color: "#FFA500",y: 0.18},{color: "#FFA500",y: 0.15},{color: "#FFA500",y: 0.20},{color: "#FFA500",y: 0.16}];
+    ,{color: "#FFA500",y: 0.28}];
 
     var intTime = 250;
     var time = 0;
