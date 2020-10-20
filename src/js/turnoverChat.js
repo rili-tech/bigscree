@@ -4,11 +4,11 @@ $(function () {
     var myDate = new Date();
     var y = myDate.getFullYear();//2018
     var m = myDate.getMonth();//3
-    y -= 2;
+    y -= 1;
     m += 1;
     
     var categories = [];
-    for(var i = 0; i < 16; i++)
+    for(var i = 0; i < 12; i++)
     {
         var l = y.toString() + '-' + m.toString();
         m++;
@@ -32,7 +32,7 @@ $(function () {
 
     var intTime = 250;
     var time = 0;
-    var timeTotal = intTime*4*16;
+    var timeTotal = intTime*4*24;
     var intval = intTime*2;
 
     window.setInterval(updatehighcharts, intTime); 
