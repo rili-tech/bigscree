@@ -4,7 +4,7 @@ $(function () {
     var myDate = new Date();
     var y = myDate.getFullYear();//2018
     var m = myDate.getMonth();//3
-    y -= 2;
+    y -= 1;
     m += 1;
     
     var categories = [];
