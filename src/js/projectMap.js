@@ -437,9 +437,10 @@ var labelssCount = 0;
 
 //右下图例
 function addControl(){
+  var _offsetTop = window.innerHeight - 170
 	var cr = new BMap.CopyrightControl({
       anchor: BMAP_ANCHOR_TOP_LEFT,
-      offset: new BMap.Size(700, 800)});   //设置版权控件位置
+      offset: new BMap.Size(700, _offsetTop)});   //设置版权控件位置
 	map.addControl(cr); //添加版权控件
         
 	var bs = map.getBounds();   //返回地图可视区域
