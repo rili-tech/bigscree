@@ -8,7 +8,7 @@ $(function () {
     m += 1;
     
     var categories = [];
-    for(var i = 0; i < 12; i++)
+    for(var i = 0; i < 13; i++)
     {
         var l = y.toString() + '-' + m.toString();
         m++;
@@ -401,7 +401,7 @@ $(function () {
         series: [{
             name: '周转率',
             type: 'column',
-            data: [null, null, null, null, null, null, null, null, null, null, null, null],
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null],
             tooltip: {
                 valueSuffix: '%'
             }
@@ -410,7 +410,7 @@ $(function () {
             name: '错误率',
             type: 'spline',
             yAxis: 1,
-            data: [null, null, null, null, null, null, null, null, null, null, null, null],
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null],
             tooltip: {
                 valueSuffix: '%'
             }
