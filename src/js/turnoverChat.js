@@ -401,8 +401,7 @@ $(function () {
         series: [{
             name: '周转率',
             type: 'column',
-            data: [null, null, null, null,
-                null, null, null, null, null, null, null, null, null, null, null, null],
+            data: [null, null, null, null, null, null, null, null, null, null, null, null],
             tooltip: {
                 valueSuffix: '%'
             }
@@ -411,8 +410,7 @@ $(function () {
             name: '错误率',
             type: 'spline',
             yAxis: 1,
-            data: [null, null, null, null,
-                null, null, null, null, null, null, null, null, null, null, null, null],
+            data: [null, null, null, null, null, null, null, null, null, null, null, null],
             tooltip: {
                 valueSuffix: '%'
             }
