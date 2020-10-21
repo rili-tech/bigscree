@@ -326,7 +326,7 @@ Highcharts.chart('design_chart', Object.assign(option3, {
 
 
 // 生产
-var product_catogery = ['9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29','9/30']
+var product_catogery = ['10/17','10/18','10/19','10/20','10/21','10/22','10/23','10/24','10/25','10/26','10/27','10/28']
 var data_product = new Array();
 data_product[0] = [
     Math.floor(Math.random() * 10 + 1),
