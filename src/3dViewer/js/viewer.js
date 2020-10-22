@@ -8,7 +8,7 @@ var selectedObj, originalMaterial;
 var modelCenter;
 
 var urlRoot = "/rlerp";
-var url = window.top.document.URL
+var url = decodeURI(window.top.document.URL)
 var meshList = {};
 console.log(url);
 var projectName = GetQueryString('project')
