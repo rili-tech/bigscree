@@ -8,8 +8,17 @@ var selectedObj, originalMaterial;
 var modelCenter;
 
 var urlRoot = "/rlerp";
-
+var url = window.top.document.referrer
 var meshList = {};
+
+var projectName = GetQueryString('project')
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
 
 function IsPC()
 {
@@ -64,6 +73,9 @@ function showExample()
 {
 
     var url = 'data/stl.json';
+    if(projectName === '广西防城港东兴碧桂园样板房') {
+        url = 'data/stl1.json';
+    }
 
     $.get(url, {}, function (data) {
         var i = 0;
@@ -340,6 +352,9 @@ function loadSTL(formwork){
         var loader = new THREE.STLLoader();
         //var url =  urlRoot + '/Application/Ipm/Common/Stl/' + formwork['model']+'.stl';
         var url = 'data/stl/' + formwork['model']+'.stl';
+        if(projectName === '广西防城港东兴碧桂园样板房') {
+            url = 'data/stl1/' + formwork['model']+'.stl';
+        }
         loader.load( url,  function ( geometry ) {
 
             geometry.applyMatrix(initMatrix(formwork['matrix']));
