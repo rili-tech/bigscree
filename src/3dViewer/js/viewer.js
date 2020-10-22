@@ -11,7 +11,7 @@ var urlRoot = "/rlerp";
 var url = decodeURI(window.top.document.URL)
 var meshList = {};
 console.log(url);
-var projectName = GetQueryString('project')
+var projectName = GetQueryString(url, 'project')
 console.log(projectName);
 function GetQueryString(url,name)
 {
