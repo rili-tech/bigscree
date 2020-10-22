@@ -13,10 +13,10 @@ var meshList = {};
 console.log(url);
 var projectName = GetQueryString('project')
 console.log(projectName);
-function GetQueryString(name)
+function GetQueryString(url,name)
 {
      var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-     var r = window.location.search.substr(1).match(reg);
+     var r = url.match(reg);
      if(r!=null)return  unescape(r[2]); return null;
 }
 
