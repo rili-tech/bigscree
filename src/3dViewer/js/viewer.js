@@ -10,9 +10,9 @@ var modelCenter;
 var urlRoot = "/rlerp";
 var url = window.top.document.referrer
 var meshList = {};
-
+console.log(url);
 var projectName = GetQueryString('project')
-
+console.log(projectName);
 function GetQueryString(name)
 {
      var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -73,7 +73,7 @@ function showExample()
 {
 
     var url = 'data/stl.json';
-    if(projectName === '广西防城港东兴碧桂园样板房') {
+    if(projectName === '广西防城港东兴碧桂园样板房#') {
         url = 'data/stl1.json';
     }
 
@@ -352,7 +352,7 @@ function loadSTL(formwork){
         var loader = new THREE.STLLoader();
         //var url =  urlRoot + '/Application/Ipm/Common/Stl/' + formwork['model']+'.stl';
         var url = 'data/stl/' + formwork['model']+'.stl';
-        if(projectName === '广西防城港东兴碧桂园样板房') {
+        if(projectName === '广西防城港东兴碧桂园样板房#') {
             url = 'data/stl1/' + formwork['model']+'.stl';
         }
         loader.load( url,  function ( geometry ) {
