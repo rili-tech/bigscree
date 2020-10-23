@@ -73,7 +73,7 @@ function showExample()
 {
 
     var url = 'data/stl.json';
-    if(projectName === '广西防城港东兴碧桂园样板房#') {
+    if(projectName === '广西玉林绿地城') {
         url = 'data/stl1.json';
     } else if (projectName === '鹏港科技样板房') {
         url = 'data/stl2.json';
@@ -356,7 +356,7 @@ function loadSTL(formwork){
         var loader = new THREE.STLLoader();
         //var url =  urlRoot + '/Application/Ipm/Common/Stl/' + formwork['model']+'.stl';
         var url = 'data/stl/' + formwork['model']+'.stl';
-        if(projectName === '广西防城港东兴碧桂园样板房#') {
+        if(projectName === '广西玉林绿地城') {
             url = 'data/stl1/' + formwork['model']+'.stl';
         } else if(projectName === '鹏港科技样板房') {
             url = 'data/stl2/' + formwork['model']+'.stl';
