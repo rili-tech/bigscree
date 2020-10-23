@@ -82,7 +82,8 @@ function showExample()
         var myVar = setInterval(function(){
             var list = [];
             list.push(data[i]);
-            renderModels(list);
+            // renderModels(list);   一个一个加载
+            renderModels(list, 1000); // 一片一片加载
             i++;
             if(i==data.length) clearInterval(myVar);
         },
@@ -311,11 +312,11 @@ function checkIfComplete(){
 
 var serialTasks = [];
 
-function renderModels(data)
+function renderModels(data, nums)
 {
     //根据data.length划分若干个串行任务，每个串行任务有parallelCount个并行任务
     var parallelCount = 1;
-
+    if(nums) parallelCount = nums
     var serialCount = parseInt(data.length / parallelCount);
     var remain = data.length % parallelCount;
 
