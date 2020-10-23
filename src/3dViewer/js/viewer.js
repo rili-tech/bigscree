@@ -75,6 +75,8 @@ function showExample()
     var url = 'data/stl.json';
     if(projectName === '广西防城港东兴碧桂园样板房#') {
         url = 'data/stl1.json';
+    } else if (projectName === '鹏港科技样板房') {
+        url = 'data/stl2.json';
     }
 
     $.get(url, {}, function (data) {
@@ -317,6 +319,7 @@ function renderModels(data, nums)
     //根据data.length划分若干个串行任务，每个串行任务有parallelCount个并行任务
     var parallelCount = 1;
     if(nums) parallelCount = nums
+    console.log(parallelCount);
     var serialCount = parseInt(data.length / parallelCount);
     var remain = data.length % parallelCount;
 
@@ -355,6 +358,8 @@ function loadSTL(formwork){
         var url = 'data/stl/' + formwork['model']+'.stl';
         if(projectName === '广西防城港东兴碧桂园样板房#') {
             url = 'data/stl1/' + formwork['model']+'.stl';
+        } else if(projectName === '鹏港科技样板房') {
+            url = 'data/stl2/' + formwork['model']+'.stl';
         }
         loader.load( url,  function ( geometry ) {
 

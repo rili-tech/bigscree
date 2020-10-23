@@ -1,4 +1,12 @@
 ﻿[
+    {
+        "province": "广东省",
+        "address": "广东省廉江市廉江大道南",
+        "project": "鹏港科技样板房",
+        "buildings": [
+            "1#"
+        ]
+    },
   {
       "province": "广西省",
       "address": "广西省钦州市",
