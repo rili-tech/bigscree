@@ -578,7 +578,7 @@ var chart5 = Highcharts.chart('chart5', options5);
       }
      });
     })(jQuery);
-    var starPath = $.Request('province')
+    var starPath = $.Request('address')
 console.log(starPath)
 // 百度地图API功能
 var map = new BMap.Map("allmap"); // 创建Map实例
