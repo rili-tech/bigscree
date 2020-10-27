@@ -124,15 +124,35 @@
     border-radius: 10px;
     background: linear-gradient(to bottom, rgb(106, 180, 245), rgba(0, 0, 0, 0.3));
 }
-
+#project-title {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 20px;
+}
 .sc_1 .product {
     width: 90%;
-    height: 80%;
+    height: 87.5%;
+    position: relative;
     margin: 0 auto;
 }
-
-.sc_6 {
+.wraper .sc_1 {
+    width: 40%;
+    height: 100%;
+}
+.wraper .sc_1 .title {
+    height: 7.5%;
+}
+.wraper .sc_6 {
+    width: 30%;
     position: relative;
+}
+
+.wraper .sc_4 {
+    width: 30%;
+}
+.wraper .sc_2,  .wraper .sc_3{
+    width: 30%;
 }
 
 .href:hover {

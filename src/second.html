@@ -23,6 +23,7 @@
                 <img src="" alt=""> 三维
             </a>
             <div class="product">
+                <div id="project-title"></div>
                 <!-- <div id="allmap" style="width : 100%;height: 100%;border-radius: 10px"></div> -->
                 <iframe src="3dViewer/index.html" frameborder="0" style="width :100%;height:100%;border-radius: 10px;"></iframe>
             </div>
@@ -109,14 +110,14 @@
                 <div id="chart4" style="width : 100%;height: 100%;border-radius: 10px"></div>
             </div>
         </div>
-        <div class="screen sc_5">
+        <!-- <div class="screen sc_5">
             <a href="supply.html" class="title href">
                 <img src="" alt=""> 供应
             </a>
             <div class="product">
                 <div id="chart5" style="width : 100%;height: 100%;border-radius: 10px"></div>
             </div>
-        </div>
+        </div> -->
         <div class="screen sc_6">
             <a href="logistics.html" class="title href">
                 <img src="" alt=""> 物流
@@ -128,7 +129,16 @@
         </div>
     </div>
 </body>
-
+<script>
+    window.onload = function () {
+        function GetQueryString(url,name) {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = url.match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        document.getElementById('project-title').innerText = '项目名称: ' + GetQueryString(decodeURI(window.document.URL), 'project')
+    }
+</script>
 <script src="./js/second_page.js"></script>
 </html>
 <script>
