@@ -61,7 +61,6 @@ $(function () {
             time = time + intTime;
             return;
         }
-        console.log(time);
         if (time < timeTotal)
         {
             var iNdx = Math.floor((time) / (intval*2));
