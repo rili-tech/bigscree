@@ -67,17 +67,17 @@ $(function () {
             var data = zhoudata[iNdx];
             time % intval ? data.color="#7cb5ec" : data.color="black";
             chart.series[0].data[iNdx].update(data);
-            var iNdx1 = Math.floor((time -timeTotal)/ (intval*2));
-            var data1 = errordata[iNdx1];
-            time % intval ? data1.color="#FFA500" : data1.color="black";
-            chart.series[1].data1[iNdx1].update(data1);
+            // var iNdx1 = Math.floor((time -timeTotal)/ (intval*2));
+            // var data1 = errordata[iNdx1];
+            // time % intval ? data1.color="#FFA500" : data1.color="black";
+            // chart.series[1].data1[iNdx1].update(data1);
         }
         else if (time < timeTotal * 2)
         {
-            // var iNdx = Math.floor((time -timeTotal)/ (intval*2));
-            // var data = errordata[iNdx];
-            // time % intval ? data.color="#FFA500" : data.color="black";
-            // chart.series[1].data[iNdx].update(data);
+            var iNdx = Math.floor((time -timeTotal)/ (intval*2));
+            var data = errordata[iNdx];
+            time % intval ? data.color="#FFA500" : data.color="black";
+            chart.series[1].data[iNdx].update(data);
         }
         else if(time < timeTotal*2 + intval*4)
         {
