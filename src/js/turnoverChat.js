@@ -25,10 +25,10 @@ $(function () {
     ,{color: "#7cb5ec",y: 90.6},{color: "#7cb5ec",y: 91.4},{color: "#7cb5ec",y: 90.7},{color: "#7cb5ec",y: 90.9},{color: "#7cb5ec",y: 98.5}
     ,{color: "#7cb5ec",y: 92.1}];
 
-    var errordata= [{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.05},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.11}
-    ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.1},{color: "#FFA500",y: 0.08},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.06}
-    ,{color: "#FFA500",y: 0.04},{color: "#FFA500",y: 0.03},{color: "#FFA500",y: 0.12},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.05}
-    ,{color: "#FFA500",y: 0.08}];
+    var errordata= [{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.11},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.11}
+    ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.1},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.16}
+    ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.12},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.15}
+    ,{color: "#FFA500",y: 0.09}];
 
     var intTime = 250;
     var time = 0;
@@ -68,13 +68,17 @@ $(function () {
             var data = zhoudata[iNdx];
             time % intval ? data.color="#7cb5ec" : data.color="black";
             chart.series[0].data[iNdx].update(data);
+            var iNdx1 = Math.floor((time -timeTotal)/ (intval*2));
+            var data1 = errordata[iNdx1];
+            time % intval ? data1.color="#FFA500" : data1.color="black";
+            chart.series[1].data1[iNdx1].update(data1);
         }
         else if (time < timeTotal * 2)
         {
-            var iNdx = Math.floor((time -timeTotal)/ (intval*2));
-            var data = errordata[iNdx];
-            time % intval ? data.color="#FFA500" : data.color="black";
-            chart.series[1].data[iNdx].update(data);
+            // var iNdx = Math.floor((time -timeTotal)/ (intval*2));
+            // var data = errordata[iNdx];
+            // time % intval ? data.color="#FFA500" : data.color="black";
+            // chart.series[1].data[iNdx].update(data);
         }
         else if(time < timeTotal*2 + intval*4)
         {
