@@ -131,7 +131,8 @@
 </body>
 <script>
     window.onload = function () {
-        function GetQueryString(url,name) {
+        function GetQueryString(url,name) { 
+            
             var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
             var r = url.match(reg);
             if(r!=null)return  unescape(r[2]); return null;
