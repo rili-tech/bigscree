@@ -35,7 +35,7 @@ $(function () {
     var timeTotal = intTime*4*13;
     var intval = intTime*2;
 
-    window.setInterval(updatehighcharts, intTime); 
+    // window.setInterval(updatehighcharts, intTime); 
  
     // function updatehighcharts() 
     // {
