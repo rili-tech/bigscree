@@ -74,6 +74,7 @@ $(function () {
         }
         else if (time < timeTotal * 2)
         {
+            
             // var iNdx1 = Math.floor((time -timeTotal)/ (intval*2));
             // var data1 = errordata[iNdx1];
             // time % intval ? data1.color="#FFA500" : data1.color="black";
