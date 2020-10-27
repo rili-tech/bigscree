@@ -403,8 +403,7 @@ $(function () {
             type: 'column',
             data: [{color: "#7cb5ec",y: 85.6},{color: "#7cb5ec",y: 88.4},{color: "#7cb5ec",y: 99.7},{color: "#7cb5ec",y: 90.5},{color: "#7cb5ec",y: 83.5}
             ,{color: "#7cb5ec",y: 95},{color: "#7cb5ec",y: 86.6},{color: "#7cb5ec",y: 88.0},{color: "#7cb5ec",y: 87.9},{color: "#7cb5ec",y: 88.1}
-            ,{color: "#7cb5ec",y: 90.6},{color: "#7cb5ec",y: 91.4},{color: "#7cb5ec",y: 90.7},{color: "#7cb5ec",y: 90.9},{color: "#7cb5ec",y: 98.5}
-            ,{color: "#7cb5ec",y: 92.1}],
+            ,{color: "#7cb5ec",y: 90.6},{color: "#7cb5ec",y: 91.4},{color: "#7cb5ec",y: 90.7}],
             tooltip: {
                 valueSuffix: '%'
             }
@@ -415,8 +414,7 @@ $(function () {
             yAxis: 1,
             data: [{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.11},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.11}
             ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.1},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.16}
-            ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.12},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.15}
-            ,{color: "#FFA500",y: 0.09}],
+            ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.12}],
             tooltip: {
                 valueSuffix: '%'
             }
