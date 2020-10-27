@@ -20,10 +20,10 @@ $(function () {
         categories.push(l);
     }
     
-    var zhoudata= [{color: "#7cb5ec",y: 45.6},{color: "#7cb5ec",y: 48.4},{color: "#7cb5ec",y: 49.7},{color: "#7cb5ec",y: 50.5},{color: "#7cb5ec",y: 53.5}
-    ,{color: "#7cb5ec",y: 55},{color: "#7cb5ec",y: 56.6},{color: "#7cb5ec",y: 58.0},{color: "#7cb5ec",y: 57.9},{color: "#7cb5ec",y: 58.1}
-    ,{color: "#7cb5ec",y: 60.6},{color: "#7cb5ec",y: 61.4},{color: "#7cb5ec",y: 60.7},{color: "#7cb5ec",y: 70.9},{color: "#7cb5ec",y: 78.5}
-    ,{color: "#7cb5ec",y: 72.1}];
+    var zhoudata= [{color: "#7cb5ec",y: 85.6},{color: "#7cb5ec",y: 88.4},{color: "#7cb5ec",y: 99.7},{color: "#7cb5ec",y: 90.5},{color: "#7cb5ec",y: 83.5}
+    ,{color: "#7cb5ec",y: 95},{color: "#7cb5ec",y: 86.6},{color: "#7cb5ec",y: 88.0},{color: "#7cb5ec",y: 87.9},{color: "#7cb5ec",y: 88.1}
+    ,{color: "#7cb5ec",y: 90.6},{color: "#7cb5ec",y: 91.4},{color: "#7cb5ec",y: 90.7},{color: "#7cb5ec",y: 90.9},{color: "#7cb5ec",y: 98.5}
+    ,{color: "#7cb5ec",y: 92.1}];
 
     var errordata= [{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.45},{color: "#FFA500",y: 0.43},{color: "#FFA500",y: 0.41}
     ,{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.38},{color: "#FFA500",y: 0.33},{color: "#FFA500",y: 0.36}
@@ -87,7 +87,7 @@ $(function () {
                 },
                 tickPositions: [0, 20, 40, 60, 80, 100],
                 title: {
-                    text: '周转率',
+                    text: '通用率',
                     style: {
                         color: '#ffffff',
                         fontSize: "18px"
@@ -101,7 +101,7 @@ $(function () {
                     width:2,                //标示线的宽度，2px
                     zIndex:1000,
                     label:{
-                        text:"周转率控制线",
+                        text:"通用率控制线",
                         style:{
                             color: time % intval ? "yellow" : "black",
                         },
@@ -227,7 +227,7 @@ $(function () {
                 },
                 tickPositions: [0, 20, 40, 60, 80, 100],
                 title: {
-                    text: '周转率',
+                    text: '通用率',
                     style: {
                         color: '#ffffff',
                         fontSize: "18px"
@@ -241,7 +241,7 @@ $(function () {
                     width:2,                //标示线的宽度，2px
                     zIndex:1000,
                     label:{
-                        text:"周转率控制线",
+                        text:"通用率控制线",
                         style:{
                             color: "yellow"
                         },
@@ -329,7 +329,7 @@ $(function () {
             enabled:false  
         },
         title: {
-            text: '周转率和错误率',
+            text: '通用率和错误率',
             style: {
                 color: '#f4ea2a',
                 fontSize: "27px"
@@ -362,7 +362,7 @@ $(function () {
             },
             tickPositions: [0, 20, 40, 60, 80, 100],
             title: {
-                text: '周转率',
+                text: '通用率',
                 style: {
                     color: '#ffffff',
                     fontSize: "18px"
@@ -399,7 +399,7 @@ $(function () {
             backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
         },
         series: [{
-            name: '周转率',
+            name: '通用率',
             type: 'column',
             data: [null, null, null, null, null, null, null, null, null, null, null, null, null],
             tooltip: {
