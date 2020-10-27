@@ -151,6 +151,9 @@
 .wraper .sc_4 {
     width: 30%;
 }
+.wraper .sc_5 {
+    display: none;
+}
 .wraper .sc_2,  .wraper .sc_3{
     width: 30%;
 }
