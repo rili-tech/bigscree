@@ -25,14 +25,14 @@ $(function () {
     ,{color: "#7cb5ec",y: 90.6},{color: "#7cb5ec",y: 91.4},{color: "#7cb5ec",y: 90.7},{color: "#7cb5ec",y: 90.9},{color: "#7cb5ec",y: 98.5}
     ,{color: "#7cb5ec",y: 92.1}];
 
-    var errordata= [{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.46},{color: "#FFA500",y: 0.45},{color: "#FFA500",y: 0.43},{color: "#FFA500",y: 0.41}
-    ,{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.40},{color: "#FFA500",y: 0.38},{color: "#FFA500",y: 0.33},{color: "#FFA500",y: 0.36}
-    ,{color: "#FFA500",y: 0.34},{color: "#FFA500",y: 0.33},{color: "#FFA500",y: 0.32},{color: "#FFA500",y: 0.30},{color: "#FFA500",y: 0.25}
-    ,{color: "#FFA500",y: 0.28}];
+    var errordata= [{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.16},{color: "#FFA500",y: 0.05},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.11}
+    ,{color: "#FFA500",y: 0.14},{color: "#FFA500",y: 0.1},{color: "#FFA500",y: 0.08},{color: "#FFA500",y: 0.13},{color: "#FFA500",y: 0.06}
+    ,{color: "#FFA500",y: 0.04},{color: "#FFA500",y: 0.03},{color: "#FFA500",y: 0.12},{color: "#FFA500",y: 0.10},{color: "#FFA500",y: 0.05}
+    ,{color: "#FFA500",y: 0.08}];
 
     var intTime = 250;
     var time = 0;
-    var timeTotal = intTime*4*24;
+    var timeTotal = intTime*4*13;
     var intval = intTime*2;
 
     window.setInterval(updatehighcharts, intTime); 
@@ -61,6 +61,7 @@ $(function () {
             time = time + intTime;
             return;
         }
+        console.log(time);
         if (time < timeTotal)
         {
             var iNdx = Math.floor((time) / (intval*2));
